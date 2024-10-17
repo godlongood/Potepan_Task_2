@@ -11,7 +11,7 @@ let count = 0;
 // タイマー (stopに必要)
 let timer;
 
-// 時間を表示す
+// 時間を表示する
 function displayTime() {
     const currentTime = new Date(Date.now() - startTime + count); // 現在のカウント時間取得、日付オブジェクト作成のため、Date.nowを取得
     const h = String(currentTime.getHours()-9); //なぜか9時間からスタートしてしまうため-9
